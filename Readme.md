@@ -13,4 +13,4 @@ Create a project to learn how GraphQl works.
 
 
 ### Browser
-Open browser with [http://localhosr:3000](http://localhosr:3000)
+Open our browser with [http://localhost:3000](http://localhost:3000)
