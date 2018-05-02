@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^4.0.2",
+    "nodemon": "^1.17.3",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon dist/app",
+    "gulp": "./node_modules/.bin/gulp"
+  }
+}
