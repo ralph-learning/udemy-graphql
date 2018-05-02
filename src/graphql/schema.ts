@@ -23,12 +23,24 @@ const typeDefs = `
   type Query {
     allUsers: [User!]!
   }
+
+  type Mutation {
+    createUser(name: String!, email: String!): User
+  }
 `;
 
 const resolvers = {
   Query: {
     allUsers: () => usersMock,
   },
+  Mutation: {
+    createUser: (parante, args) => {
+      const newUser = {...args, id: usersMock.length + 1};
+      usersMock.push(newUser);
+
+      return newUser;
+    }
+  }
 };
 
 export default makeExecutableSchema({ typeDefs, resolvers });
