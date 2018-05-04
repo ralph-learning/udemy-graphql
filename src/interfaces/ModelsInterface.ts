@@ -1,3 +1,1 @@
-export interface ModelsInterface {
-
-};
+export interface ModelsInterface {}
